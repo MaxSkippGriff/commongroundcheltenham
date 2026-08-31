@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Common Ground Cheltenham">
 <meta property="og:title" content="Common Ground Cheltenham | Community Centre &amp; Cafe">
-<meta property="og:description" content="Common Ground Cheltenham is a community centre and cafe on Brooklyn Road, Cheltenham, run by Mission Inclusion CIC. Coffee, room hire, workshops, art and a place for everyone.">
+<meta property="og:description" content="An old community centre. A slightly mad idea. A lot of people who believed in it. Coffee, community and a place for everyone on Brooklyn Road, Cheltenham.">
 <meta property="og:url" content="https://commongroundcheltenham.com/">
 <meta property="og:image" content="https://commongroundcheltenham.com/assets/building-exterior.webp">
 <meta property="og:locale" content="en_GB">
@@ -19,8 +19,12 @@
 <link rel="preload" as="font" type="font/woff2" href="assets/caprasimo-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="assets/figtree-latin.woff2" crossorigin>
 <style>
-/* Organic — design-system tokens and component classes. This file is the source of truth for the system's look; retune it here and see readme.md. */
-/* latin-ext */
+/* ══════════════════════════════════════════════════════════════════════════
+   Common Ground Cheltenham
+   Palette and type are the "Organic / Giverny" system from the original
+   design. Layout, navigation and interaction were rebuilt for the live site.
+   ══════════════════════════════════════════════════════════════════════ */
+
 @font-face {
   font-family: 'Caprasimo';
   font-style: normal;
@@ -29,7 +33,6 @@
   src: url("assets/caprasimo-latin-ext.woff2") format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
 @font-face {
   font-family: 'Caprasimo';
   font-style: normal;
@@ -38,7 +41,6 @@
   src: url("assets/caprasimo-latin.woff2") format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* latin-ext */
 @font-face {
   font-family: 'Figtree';
   font-style: normal;
@@ -47,7 +49,6 @@
   src: url("assets/figtree-latin-ext.woff2") format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
 @font-face {
   font-family: 'Figtree';
   font-style: normal;
@@ -56,7 +57,6 @@
   src: url("assets/figtree-latin.woff2") format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* latin-ext */
 @font-face {
   font-family: 'Figtree';
   font-style: normal;
@@ -65,7 +65,6 @@
   src: url("assets/figtree-latin-ext.woff2") format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
 @font-face {
   font-family: 'Figtree';
   font-style: normal;
@@ -74,7 +73,6 @@
   src: url("assets/figtree-latin.woff2") format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* latin-ext */
 @font-face {
   font-family: 'Figtree';
   font-style: normal;
@@ -83,7 +81,6 @@
   src: url("assets/figtree-latin-ext.woff2") format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
-/* latin */
 @font-face {
   font-family: 'Figtree';
   font-style: normal;
@@ -92,572 +89,802 @@
   src: url("assets/figtree-latin.woff2") format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
 
 :root {
-  --color-bg: #f5ead8;
-  --color-surface: #ebddc5;
-  --color-text: #201e1d;
-  --color-accent: #c67139;
-  --color-accent-2: #7a8a5e;
-  --color-divider: color-mix(in srgb, #201e1d 16%, transparent);
+  --bg:           #fbf4ef;
+  --surface:      #f2ddd6;
+  --text:         #2a2b25;
+  --muted:        #5f6154;
+  --divider:      color-mix(in srgb, #2a2b25 14%, transparent);
 
-  /* Tonal ramps — generated in OKLCH on one shared lightness scale, so the
-     same step of any role matches the others in visual value. */
-  --color-neutral-100: #f9f4ed;
-  --color-neutral-200: #eee7db;
-  --color-neutral-300: #dcd3c4;
-  --color-neutral-400: #c0b6a5;
-  --color-neutral-500: #a19786;
-  --color-neutral-600: #82796a;
-  --color-neutral-700: #645c50;
-  --color-neutral-800: #474238;
-  --color-neutral-900: #2e2b25;
+  --green:        #5b7f5f;
+  --green-100:    #eef4ee;
+  --green-200:    #dce8dc;
+  --green-300:    #c1d4c2;
+  --green-400:    #9cba9e;
+  --green-700:    #45664a;
+  --green-800:    #334d38;
+  --green-900:    #24362a;
 
-  --color-accent-100: #fff2eb;
-  --color-accent-200: #ffe1d0;
-  --color-accent-300: #ffc6a5;
-  --color-accent-400: #f6a06b;
-  --color-accent-500: #d67f48;
-  --color-accent-600: #b2622d;
-  --color-accent-700: #8c491a;
-  --color-accent-800: #643312;
-  --color-accent-900: #402310;
+  --pink:         #d9a294;
+  --pink-100:     #fdf1ec;
+  --pink-200:     #f9e0d8;
+  --pink-300:     #f0c8bc;
+  --pink-700:     #834b46;
+  --pink-800:     #5e3532;
 
-  --color-accent-2-100: #f0fae1;
-  --color-accent-2-200: #e1eecc;
-  --color-accent-2-300: #ccdbb2;
-  --color-accent-2-400: #aebf92;
-  --color-accent-2-500: #8fa073;
-  --color-accent-2-600: #728157;
-  --color-accent-2-700: #56633f;
-  --color-accent-2-800: #3d472b;
-  --color-accent-2-900: #272e1b;
+  --font-heading: "Caprasimo", Georgia, serif;
+  --font-body:    "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
 
-  --font-heading: "Caprasimo", system-ui, sans-serif;
-  --font-heading-weight: 400;
-  --font-body: "Figtree", system-ui, sans-serif;
+  --radius:       18px;
+  --radius-lg:    28px;
 
-  --space-1: 4.4px;
-  --space-2: 8.8px;
-  --space-3: 13.2px;
-  --space-4: 17.6px;
-  --space-6: 26.4px;
-  --space-8: 35.2px;
+  --shadow-sm:    0 1px 2px color-mix(in srgb, #2a2b25 10%, transparent);
+  --shadow-md:    0 6px 20px color-mix(in srgb, #2a2b25 13%, transparent);
+  --shadow-lg:    0 18px 44px color-mix(in srgb, #2a2b25 18%, transparent);
 
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 28px;
-
-  /* Elevation — derived from the ground: soft ink-tinted shadows on a
-     light theme, a hairline edge + ambient darkness on a dark one. */
-  --shadow-sm: 0 1px 2px color-mix(in srgb, #2e2b25 14%, transparent);
-  --shadow-md: 0 3px 10px color-mix(in srgb, #2e2b25 16%, transparent);
-  --shadow-lg: 0 12px 32px color-mix(in srgb, #2e2b25 22%, transparent);
+  --header-h:     68px;
+  --gutter:       clamp(20px, 5vw, 56px);
+  --measure:      68ch;
 }
-
-body {
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-body);
-}
-h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: var(--font-heading-weight); }
-
-.washed{filter:saturate(0.6) contrast(0.85) brightness(1.1) opacity(0.94)}
-
-/* ══════════════════════════════════════════════════════════════════════════
-   Components — built with the tokens above. Plain CSS
-   on plain HTML: no JavaScript, no build step. Each class is documented in
-   readme.md and demonstrated in foundations/ and components/.
-   ══════════════════════════════════════════════════════════════════════ */
 
 *, *::before, *::after { box-sizing: border-box; }
-body { margin: 0; font-size: 15px; line-height: 1.55; font-weight: 400; }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  line-height: 1.12; letter-spacing: -0.015em; margin: 0 0 var(--space-2);
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
-h1 { font-size: 42px; }
-h2 { font-size: 32px; }
-h3 { font-size: 25px; }
-h4 { font-size: 20px; }
-h5 { font-size: 16px; }
-h6 { font-size: 13px; }
-h6 { letter-spacing: 0.08em; text-transform: uppercase; }
-p { margin: 0 0 var(--space-3); }
-a { color: var(--color-accent); text-underline-offset: 3px; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin: 0;
+  text-wrap: balance;
+}
+h1 { font-size: clamp(34px, 5vw, 52px); }
+h2 { font-size: clamp(28px, 4.4vw, 41px); }
+h3 { font-size: clamp(20px, 2.4vw, 24px); }
+
+p { margin: 0 0 1.05em; }
+p:last-child { margin-bottom: 0; }
+
+a { color: var(--green-700); text-underline-offset: 3px; }
+a:hover { color: var(--green-800); }
+
 img { display: block; max-width: 100%; }
-figure { margin: 0; }
-figcaption {
-  font-size: 11px; margin-top: var(--space-1);
-  color: color-mix(in srgb, var(--color-text) 55%, transparent);
-}
-.text-muted { color: color-mix(in srgb, var(--color-text) 55%, transparent); }
-:focus { outline: none; }
-:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
-::selection { background: color-mix(in srgb, var(--color-accent) 30%, transparent); }
 
-/* — rules — */
-.hr {
-  height: 1px; border: 0; margin: var(--space-4) 0;
-  background: var(--color-divider);
+:focus-visible {
+  outline: 3px solid var(--green-700);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
+::selection { background: var(--green-300); }
 
-/* — buttons — */
+/* ── layout helpers ───────────────────────────────────────────────────── */
+
+.wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 var(--gutter); }
+.wrap--narrow { max-width: 780px; }
+
+section { padding: clamp(64px, 9vw, 118px) 0; scroll-margin-top: calc(var(--header-h) + 8px); }
+.band-surface { background: var(--surface); }
+.band-dark { background: var(--green-800); color: var(--green-100); }
+.band-dark h2 { color: #fff; }
+.band-dark a { color: var(--green-100); }
+
+.eyebrow {
+  display: inline-flex; align-items: center;
+  font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 6px 14px; border-radius: 999px;
+  background: var(--green-100); color: var(--green-800);
+  margin: 0 0 18px;
+}
+.eyebrow--pink { background: var(--pink-200); color: var(--pink-800); }
+.band-dark .eyebrow { background: color-mix(in srgb, #fff 16%, transparent); color: #fff; }
+
+.lede { font-size: clamp(18px, 2vw, 21px); line-height: 1.6; color: var(--muted); }
+.pull {
+  font-family: var(--font-heading); font-weight: 400;
+  font-size: clamp(21px, 2.7vw, 28px); line-height: 1.28;
+  color: var(--green-700); margin: 0;
+  text-wrap: balance;
+}
+.band-dark .pull { color: var(--green-300); }
+.section-head { max-width: var(--measure); margin: 0 0 clamp(34px, 4vw, 52px); }
+.section-head p { color: var(--muted); }
+
+/* ── buttons ──────────────────────────────────────────────────────────── */
+
 .btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
-  cursor: pointer; text-decoration: none;
-  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: 14px; line-height: 1.2; color: var(--color-text); /* matches the .input's 14px —
-     the pair sits side by side in sign-up rows */
-  background: transparent; border: 1px solid transparent;
-  padding: var(--space-2) calc(var(--space-3) * 1.2);
-  border-radius: var(--radius-md);
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font-family: var(--font-heading); font-size: 16px; line-height: 1;
+  padding: 15px 26px; border-radius: 999px; border: 1.5px solid transparent;
+  text-decoration: none; cursor: pointer; white-space: nowrap;
+  transition: transform .16s ease, background-color .16s ease, box-shadow .16s ease, color .16s ease;
 }
-.btn svg { display: block; }
-.btn:disabled { opacity: 0.45; cursor: not-allowed; }
-.btn-primary { background: var(--color-accent); color: var(--color-bg); }
-.btn-primary:hover { background: var(--color-accent-600); }
-.btn-primary:active { background: var(--color-accent-700); }
-.btn-secondary { border-color: var(--color-divider); }
-.btn-secondary:hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
-.btn-secondary:active { background: color-mix(in srgb, var(--color-text) 14%, transparent); }
-.btn-ghost { color: var(--color-accent); padding-inline: var(--space-1); }
-.btn-ghost:hover { background: color-mix(in srgb, var(--color-accent) 10%, transparent); }
-.btn-ghost:active { background: color-mix(in srgb, var(--color-accent) 18%, transparent); }
-.btn-icon { width: 36px; height: 36px; padding: 0; }
-.btn-block { width: 100%; margin-top: var(--space-2); }
+.btn-primary { background: var(--green-700); color: #fff; box-shadow: var(--shadow-sm); }
+.btn-primary:hover { background: var(--green-800); color: #fff; transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.btn-secondary { border-color: color-mix(in srgb, var(--text) 24%, transparent); color: var(--text); }
+.btn-secondary:hover { background: color-mix(in srgb, var(--text) 6%, transparent); color: var(--text); transform: translateY(-2px); }
+.band-dark .btn-primary { background: var(--pink); color: var(--pink-800); }
+.band-dark .btn-primary:hover { background: var(--pink-300); color: var(--pink-800); }
+.btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
+@media (prefers-reduced-motion: reduce) { .btn:hover { transform: none; } }
 
-/* — forms — */
-.field > label {
-  display: block; font-size: 12px; margin-bottom: 5px;
-  color: color-mix(in srgb, var(--color-text) 70%, transparent);
-}
-.input {
-  width: 100%; min-height: 36px; padding: 6px 10px; font: inherit;
-  font-size: 14px; color: var(--color-text); caret-color: var(--color-accent);
-  background: var(--color-surface);
-  border: 1px solid var(--color-divider); border-radius: var(--radius-md);
-}
-.input:hover { border-color: color-mix(in srgb, var(--color-text) 45%, transparent); }
-.input:focus-visible { border-color: var(--color-accent); outline-offset: 0; }
-textarea.input { min-height: 90px; resize: vertical; }
-.radio { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; }
-.radio input, .seg-opt input {
-  position: absolute; opacity: 0; width: 0; height: 0; pointer-events: none;
-}
-.radio .dot {
-  width: 16px; height: 16px; flex: none; border-radius: 50%;
-  border: 1.5px solid var(--color-divider);
-}
-.radio:hover .dot { border-color: var(--color-accent); }
-.radio input:checked + .dot {
-  border-color: var(--color-accent); background: var(--color-accent);
-  box-shadow: inset 0 0 0 4px var(--color-bg);
-}
-.radio input:focus-visible + .dot { outline: 2px solid var(--color-accent); outline-offset: 2px; }
-.seg {
-  display: inline-flex; overflow: hidden;
-  border: 1px solid var(--color-divider); border-radius: var(--radius-md);
-}
-.seg-opt {
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 7px 12px; font-size: 13px; cursor: pointer;
-}
-.seg-opt + .seg-opt { border-left: 1px solid var(--color-divider); }
-.seg-opt:has(input:checked) { background: var(--color-accent); color: var(--color-bg); }
-.seg-opt:not(:has(input:checked)):hover { background: color-mix(in srgb, var(--color-text) 7%, transparent); }
-.seg-opt:has(input:focus-visible) { outline: 2px solid var(--color-accent); outline-offset: -2px; }
+/* ── header ───────────────────────────────────────────────────────────── */
 
-/* — cards — */
-.card {
-  display: flex; flex-direction: column; gap: var(--space-2);
-  padding: var(--space-3); border-radius: var(--radius-md); background: var(--color-surface);
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 200;
+  background: var(--green-800); color: #fff; padding: 12px 20px;
+  border-radius: 0 0 10px 0; text-decoration: none;
 }
-.card-kicker { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent); }
-.card-title {
-  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: 17px; line-height: 1.2;
+.skip:focus { left: 0; color: #fff; }
+
+.site-header {
+  position: sticky; top: 0; z-index: 100;
+  height: var(--header-h);
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color .2s ease, box-shadow .2s ease;
 }
-.card-body { margin: 0; font-size: 13px; opacity: 0.8; flex: 1; }
-.card-meta {
-  display: flex; align-items: center; gap: 6px; font-size: 11px;
-  color: color-mix(in srgb, var(--color-text) 50%, transparent);
+.site-header.is-stuck { border-bottom-color: var(--divider); box-shadow: 0 2px 14px rgb(42 43 37 / 7%); }
+.site-header .wrap { height: 100%; display: flex; align-items: center; gap: 20px; }
+
+.brand {
+  font-family: var(--font-heading); font-size: 19px; line-height: 1;
+  color: var(--text); text-decoration: none; margin-right: auto; white-space: nowrap;
 }
-.elev-sm { box-shadow: var(--shadow-sm); }
-.elev-md { box-shadow: var(--shadow-md); }
-.elev-lg { box-shadow: var(--shadow-lg); }
+.brand:hover { color: var(--green-700); }
 
-/* — tags — */
-.tag {
-  display: inline-flex; align-items: center; font-size: 11px;
-  letter-spacing: 0.02em; padding: 3px 10px;
-  border-radius: calc(var(--radius-md) * 0.75);
+.nav-links { display: flex; align-items: center; gap: 24px; }
+.nav-links a {
+  color: var(--text); text-decoration: none; font-size: 15.5px; position: relative; padding: 4px 0;
 }
-.tag-accent { background: var(--color-accent-100); color: var(--color-accent-800); }
-.tag-accent-2 { background: var(--color-accent-2-100); color: var(--color-accent-2-800); }
-.tag-neutral { background: var(--color-neutral-100); color: var(--color-neutral-800); }
-.tag-outline { border: 1px solid var(--color-accent); color: var(--color-accent); }
-
-/* — navigation — */
-.nav {
-  display: flex; align-items: center; gap: var(--space-4);
-  padding: var(--space-3) var(--space-4);
-  border-bottom: none;
+.nav-links a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px;
+  background: var(--green-700); border-radius: 2px;
+  transform: scaleX(0); transform-origin: left; transition: transform .18s ease;
 }
-.nav-brand {
-  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: 18px; margin-right: auto;
+.nav-links a:hover::after, .nav-links a[aria-current="true"]::after { transform: scaleX(1); }
+.nav-links a[aria-current="true"] { color: var(--green-700); }
+
+.nav-cta { padding: 12px 22px; font-size: 15px; }
+
+.menu-btn {
+  display: none; width: 46px; height: 46px; padding: 0; margin-right: -8px;
+  align-items: center; justify-content: center;
+  background: transparent; border: 1.5px solid var(--divider); border-radius: 999px;
+  color: var(--text); cursor: pointer;
 }
-.nav a { color: inherit; text-decoration: none; font-size: 14px; }
-.nav a:hover, .nav a[aria-current='page'] { color: var(--color-accent); }
-
-/* — tables — */
-.table { width: 100%; border-collapse: collapse; font-size: 14px; }
-.table th {
-  text-align: left; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
-  color: color-mix(in srgb, var(--color-text) 60%, transparent);
-  padding: var(--space-2); border-bottom: 1px solid var(--color-divider);
+.menu-btn:hover { background: color-mix(in srgb, var(--text) 6%, transparent); }
+.menu-btn span, .menu-btn span::before, .menu-btn span::after {
+  display: block; width: 18px; height: 2px; background: currentColor; border-radius: 2px;
+  transition: transform .2s ease, opacity .2s ease;
 }
-.table td {
-  padding: var(--space-2);
-  border-bottom: 1px solid color-mix(in srgb, var(--color-text) 8%, transparent);
-}
-.table tbody tr:hover { background: color-mix(in srgb, var(--color-text) 4%, transparent); }
+.menu-btn span { position: relative; }
+.menu-btn span::before, .menu-btn span::after { content: ""; position: absolute; left: 0; }
+.menu-btn span::before { top: -6px; }
+.menu-btn span::after  { top: 6px; }
+body.menu-open .menu-btn span { background: transparent; }
+body.menu-open .menu-btn span::before { transform: translateY(6px) rotate(45deg); }
+body.menu-open .menu-btn span::after  { transform: translateY(-6px) rotate(-45deg); }
 
-/* — dialog — */
-.dialog-backdrop {
-  position: fixed; inset: 0; display: grid; place-items: center;
-  padding: var(--space-4);
-  background: color-mix(in srgb, var(--color-neutral-900) 50%, transparent);
-}
-.dialog {
-  width: min(440px, 100%); display: flex; flex-direction: column; gap: var(--space-3);
-  padding: var(--space-4); border-radius: var(--radius-lg);
-  background: var(--color-surface); box-shadow: var(--shadow-lg);
-}
-.dialog-title {
-  font-family: var(--font-heading); font-weight: var(--font-heading-weight);
-  font-size: 20px;
-}
-.dialog-body { font-size: 14px; opacity: 0.85; }
-.dialog-actions { display: flex; justify-content: flex-end; gap: var(--space-2); margin-top: var(--space-2); }
-
-/* — rounded frame: everything softens, small controls go pill — */
-.card, .dialog { border-radius: calc(var(--radius-lg) * 1.15); }
-.btn, .tag, .seg, .input { border-radius: 999px; }
-.input { padding-inline: 14px; }
-
-
-
-  /* Giverny — Monet's house: crushed-strawberry pink walls, shutter green. */
-  :root {
-    --color-bg: #fbf4ef;
-    --color-surface: #f2ddd6;
-    --color-text: #2a2b25;
-    --color-accent: #5b7f5f;
-    --color-accent-2: #d9a294;
-    --color-divider: color-mix(in srgb, #2a2b25 14%, transparent);
-
-    --color-accent-100: #eef4ee;
-    --color-accent-200: #dce8dc;
-    --color-accent-300: #c1d4c2;
-    --color-accent-400: #9cba9e;
-    --color-accent-500: #7a9c7d;
-    --color-accent-600: #5b7f5f;
-    --color-accent-700: #45664a;
-    --color-accent-800: #334d38;
-    --color-accent-900: #24362a;
-
-    --color-accent-2-100: #fdf1ec;
-    --color-accent-2-200: #f9e0d8;
-    --color-accent-2-300: #f0c8bc;
-    --color-accent-2-400: #d9a294;
-    --color-accent-2-500: #c17f70;
-    --color-accent-2-600: #a4635a;
-    --color-accent-2-700: #834b46;
-    --color-accent-2-800: #5e3532;
-    --color-accent-2-900: #3d2220;
-
-    --blue: var(--color-accent-700);    --blue-tint: var(--color-accent-100);   --blue-deep: var(--color-accent-800);
-    --pink: var(--color-accent-2);      --pink-tint: var(--color-accent-2-100);  --pink-deep: var(--color-accent-2-700);
-    --brown: var(--color-accent-2-700);  --brown-tint: var(--color-accent-2-100);  --brown-deep: var(--color-accent-2-800);
-  }
-  body { margin: 0; }
-  .btn-primary { background: var(--color-accent-700); color: var(--color-bg); }
-  .btn-primary:hover { background: var(--color-accent-800); }
-  a { color: var(--color-accent-700); }
-  a:hover { color: var(--color-accent-800); }
-
-/* ── image slots (replaces the Claude Design canvas runtime) ───────────── */
-.image-slot { display: block; overflow: hidden; position: relative; background: var(--color-surface); }
-.image-slot > img { width: 100%; height: 100%; object-fit: cover; display: block; }
-/* Two photo slots were never filled in on the original design, so they are
-   hidden rather than shown as blank boxes. To use one: drop the photo into
-   assets/, then replace the empty <div class="image-slot image-slot--empty">
-   with <div class="image-slot washed" style="..."><img src="assets/your.webp"
-   alt="describe the photo"></div> — keep the existing style="..." intact. */
-.image-slot--empty { display: none; }
-
-/* ── responsive ───────────────────────────────────────────────────────── */
 @media (max-width: 900px) {
-  .nav { flex-wrap: wrap; gap: var(--space-2) var(--space-3); padding-left: 20px !important; padding-right: 20px !important; }
-  .nav-brand { flex-basis: 100%; margin-right: 0; }
-  section, footer { padding-left: 20px !important; padding-right: 20px !important; }
-  section { padding-top: 56px !important; padding-bottom: 56px !important; gap: 32px !important; }
-  section > div { gap: 32px !important; }
-  h1 { font-size: 32px !important; }
-  h2 { font-size: 26px !important; }
-  .image-slot { height: 240px !important; min-height: 240px !important; }
-  .hero-media { display: grid !important; grid-template-columns: 1fr 1fr; height: auto !important; }
-  .hero-media-col { display: contents !important; }
-  .hero-media > .image-slot { height: 150px !important; min-height: 150px !important; }
-  .hero-media > .image-slot:first-child { grid-row: span 2; height: 100% !important; }
+  .nav-links, .nav-cta { display: none; }
+  .menu-btn { display: inline-flex; }
+
+  .nav-panel {
+    position: fixed; inset: var(--header-h) 0 0 0; z-index: 98;
+    background: var(--bg);
+    padding: 12px var(--gutter) 40px;
+    display: flex; flex-direction: column; gap: 2px;
+    overflow-y: auto;
+    transform: translateY(-8px); opacity: 0; pointer-events: none;
+    transition: opacity .2s ease, transform .2s ease;
+  }
+  body.menu-open .nav-panel { opacity: 1; transform: none; pointer-events: auto; }
+  body.menu-open { overflow: hidden; }
+  .nav-panel a {
+    font-family: var(--font-heading); font-size: 25px; color: var(--text);
+    text-decoration: none; padding: 17px 2px; border-bottom: 1px solid var(--divider);
+  }
+  .nav-panel a:last-of-type { border-bottom: 0; }
+  .nav-panel .btn { margin-top: 22px; font-size: 18px; padding: 17px 26px; }
 }
-@media (max-width: 560px) {
-  .nav a:not(.btn) { font-size: 13px; }
+@media (min-width: 901px) { .nav-panel { display: none; } }
+
+/* ── hero ─────────────────────────────────────────────────────────────── */
+
+.hero { padding: clamp(44px, 6vw, 92px) 0 clamp(52px, 6vw, 96px); }
+.hero .wrap { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(36px, 5vw, 72px); align-items: center; }
+.hero h1 { margin-bottom: 22px; }
+.hero .lede { max-width: 48ch; }
+.hero .quiet { color: var(--green-700); font-weight: 600; }
+.hero .btn-row { margin-top: 30px; }
+
+.collage { display: grid; grid-template-columns: 1.25fr 1fr; grid-template-rows: 1fr 1fr; gap: 16px; height: clamp(360px, 44vw, 480px); }
+.collage .frame:first-child { grid-row: span 2; }
+.frame { overflow: hidden; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); background: var(--surface); }
+.frame img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.72) contrast(.9) brightness(1.06); }
+
+/* ── facts strip ──────────────────────────────────────────────────────── */
+
+.facts { border-top: 1px solid var(--divider); border-bottom: 1px solid var(--divider); background: var(--green-100); }
+.facts .wrap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px 32px; padding-top: 26px; padding-bottom: 26px; }
+.fact { display: flex; align-items: flex-start; gap: 13px; }
+.fact svg { flex: none; width: 22px; height: 22px; color: var(--green-700); margin-top: 2px; }
+.fact b { display: block; font-family: var(--font-heading); font-weight: 400; font-size: 17px; line-height: 1.25; }
+.fact span { font-size: 14.5px; color: var(--muted); line-height: 1.45; }
+
+/* ── split rows ───────────────────────────────────────────────────────── */
+
+.split { display: grid; grid-template-columns: 1fr 1.08fr; gap: clamp(34px, 5vw, 76px); align-items: center; }
+.split--flip .split-media { order: 2; }
+.split-media { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); aspect-ratio: 4 / 3.4; }
+.split-media img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.72) contrast(.9) brightness(1.06); }
+.split-body > .pull { margin-top: 26px; }
+
+/* ── cards ────────────────────────────────────────────────────────────── */
+
+.grid { display: grid; gap: clamp(16px, 2vw, 24px); }
+.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.card {
+  display: flex; flex-direction: column; gap: 11px;
+  padding: clamp(24px, 2.6vw, 34px);
+  border-radius: var(--radius-lg); background: var(--bg);
+  border: 1px solid var(--divider);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+@media (prefers-reduced-motion: reduce) { .card:hover { transform: none; } }
+.card p { font-size: 16px; color: var(--muted); }
+.card .kicker { font-size: 12px; font-weight: 700; letter-spacing: 0.11em; text-transform: uppercase; color: var(--pink-700); }
+.card--now  { background: var(--pink-100); border-color: transparent; }
+.card--next { background: var(--green-100); border-color: transparent; }
+.card--next .kicker { color: var(--green-700); }
+.card .pull { font-size: 19px; margin-top: 4px; }
+
+.icon-badge {
+  width: 46px; height: 46px; border-radius: 14px; margin-bottom: 4px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--green-100); color: var(--green-700);
+}
+.icon-badge svg { width: 24px; height: 24px; }
+.card h3 { color: var(--green-700); }
+
+/* ── tag cloud ────────────────────────────────────────────────────────── */
+
+.tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.tags li {
+  list-style: none; font-size: 15px; padding: 9px 18px; border-radius: 999px;
+  background: var(--bg); border: 1px solid var(--divider); color: var(--text);
+}
+.band-dark .tags li { background: color-mix(in srgb, #fff 12%, transparent); border-color: transparent; color: var(--green-100); }
+
+/* ── centred narrative blocks (sections whose photo was never supplied) ── */
+
+.centred { text-align: center; }
+.centred .eyebrow { margin-inline: auto; }
+.centred .lede, .centred p { margin-inline: auto; max-width: 62ch; }
+.centred .btn-row { justify-content: center; }
+.quote-card {
+  margin: clamp(30px, 4vw, 44px) auto 0; padding: clamp(28px, 4vw, 44px);
+  border-radius: var(--radius-lg); background: var(--green-100);
+  border: 1px solid var(--green-200);
+}
+.band-surface .quote-card { background: var(--bg); border-color: var(--divider); }
+.quote-card .pull { font-size: clamp(23px, 3.2vw, 33px); }
+
+/* ── visit ────────────────────────────────────────────────────────────── */
+
+.visit { display: grid; grid-template-columns: 1.35fr 1fr; gap: clamp(34px, 5vw, 72px); align-items: start; }
+.visit-media { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); aspect-ratio: 3 / 4; position: sticky; top: calc(var(--header-h) + 28px); }
+.visit-media img { width: 100%; height: 100%; object-fit: cover; }
+.info-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 28px 0; }
+.info {
+  display: flex; gap: 14px; padding: 22px;
+  background: var(--bg); border: 1px solid var(--divider); border-radius: var(--radius);
+}
+.band-surface .info { background: var(--bg); }
+.info svg { flex: none; width: 22px; height: 22px; color: var(--green-700); margin-top: 3px; }
+.info dt { font-family: var(--font-heading); font-size: 16px; margin-bottom: 5px; }
+.info dd { margin: 0; font-size: 15.5px; color: var(--muted); line-height: 1.55; }
+.info dd a { color: var(--green-700); word-break: normal; overflow-wrap: break-word; }
+
+/* ── footer ───────────────────────────────────────────────────────────── */
+
+.site-footer { background: var(--green-900); color: var(--green-200); padding: clamp(56px, 7vw, 88px) 0 34px; }
+.site-footer a { color: var(--green-200); text-decoration: none; }
+.site-footer a:hover { color: #fff; text-decoration: underline; }
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: clamp(30px, 5vw, 72px); }
+.footer-brand { font-family: var(--font-heading); font-size: 25px; color: #fff; margin-bottom: 12px; }
+.site-footer h4 {
+  font-family: var(--font-body); font-size: 13px; font-weight: 700;
+  letter-spacing: 0.11em; text-transform: uppercase; color: var(--green-300); margin: 0 0 16px;
+}
+.footer-links { display: grid; gap: 11px; padding: 0; margin: 0; list-style: none; font-size: 15.5px; }
+.social { display: grid; gap: 12px; padding: 0; margin: 0; list-style: none; font-size: 15.5px; }
+.social a { display: inline-flex; align-items: center; gap: 10px; }
+.footer-note { font-size: 14.5px; color: var(--green-300); margin-top: 14px; }
+.footer-bottom {
+  margin-top: clamp(38px, 5vw, 58px); padding-top: 26px;
+  border-top: 1px solid color-mix(in srgb, #fff 16%, transparent);
+  font-family: var(--font-heading); font-size: clamp(17px, 2vw, 21px); color: var(--pink-300);
+  text-wrap: balance;
 }
 
+/* ── scroll reveal ────────────────────────────────────────────────────── */
+
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity .55s ease, transform .55s ease; }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+.no-js .reveal { opacity: 1; transform: none; }
+
+/* ══ responsive ═══════════════════════════════════════════════════════ */
+
+@media (max-width: 1000px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .visit { grid-template-columns: 1fr; }
+  .visit-media { position: static; aspect-ratio: 16 / 11; order: -1; }
+}
+
+@media (max-width: 860px) {
+  .hero .wrap { grid-template-columns: 1fr; gap: 34px; }
+  .collage { height: 300px; }
+  .split, .split--flip { grid-template-columns: 1fr; gap: 28px; }
+  .split--flip .split-media { order: -1; }
+  .split-media { aspect-ratio: 16 / 11; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .facts .wrap { grid-template-columns: 1fr; gap: 18px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid > :first-child { grid-column: 1 / -1; }
+}
+
+@media (max-width: 560px) {
+  body { font-size: 16.5px; }
+  .grid-4 { grid-template-columns: 1fr; }
+  .info-grid { grid-template-columns: 1fr; }
+  .collage { grid-template-columns: 1fr 1fr; grid-template-rows: 150px 150px; height: auto; }
+  .collage .frame:first-child { grid-row: span 2; }
+  .btn-row .btn { flex: 1 1 100%; }
+  .footer-grid { grid-template-columns: 1fr; gap: 34px; }
+}
 </style>
 </head>
-<body>
-<div style="font-family: var(--font-body); color: var(--color-text); background: var(--color-bg); overflow-x: hidden; font-size: 15px; line-height: 1.55;">
+<body class="no-js">
 
-  <nav class="nav" style="position: sticky; top: 0; z-index: 50; padding: var(--space-3) 48px; background: color-mix(in srgb, var(--color-bg) 92%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--color-divider);">
-    <div class="nav-brand">Common Ground Cheltenham</div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <a class="brand" href="#top">Common Ground Cheltenham</a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#story">Our Story</a>
+      <a href="#everyone">A Place for Everyone</a>
+      <a href="#values">Values</a>
+      <a href="#support">Support Us</a>
+      <a href="#idea">Have an Idea?</a>
+    </nav>
+    <a href="#visit" class="btn btn-primary nav-cta">Visit Us</a>
+
+    <button class="menu-btn" id="menuBtn" type="button"
+            aria-expanded="false" aria-controls="navPanel" aria-label="Open menu">
+      <span></span>
+    </button>
+  </div>
+
+</header>
+
+  <nav class="nav-panel" id="navPanel" aria-label="Primary, mobile">
     <a href="#story">Our Story</a>
     <a href="#everyone">A Place for Everyone</a>
     <a href="#values">Values</a>
     <a href="#support">Support Us</a>
     <a href="#idea">Have an Idea?</a>
-    <a href="#visit" class="btn btn-primary" style="font-size: 15px; padding: var(--space-3) var(--space-6); min-width: 0; background: var(--color-accent-700); color: var(--color-bg);">Visit Us</a>
+    <a href="#visit" class="btn btn-primary">Visit Us</a>
   </nav>
 
-  <!-- Hero -->
-  <section style="padding: 80px 48px 90px; display: flex; align-items: center; gap: 64px; max-width: 1280px; margin: 0 auto; flex-wrap: wrap;">
-    <div style="flex: 1; min-width: 320px;">
-      <span class="tag" style="margin-bottom: var(--space-4); background: var(--blue-tint); color: var(--blue);">Our Story</span>
-      <h1 style="font-size: 46px; margin: var(--space-3) 0 var(--space-4);">An old community centre. A slightly mad idea. A lot of people who believed in it.</h1>
-      <p style="font-size: 18px; max-width: 520px; line-height: 1.65; margin: 0 0 var(--space-3);">This building has been part of Cheltenham since around 1947. For generations, people came through these doors to meet, celebrate, play, dance and spend time together.</p>
-      <p style="font-size: 18px; max-width: 520px; line-height: 1.65; margin: 0 0 var(--space-6); color: var(--color-accent-700);">Then the building fell quiet.</p>
-      <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
-        <a href="#story" class="btn btn-primary" style="font-size: 15px; padding: var(--space-3) var(--space-6); min-width: 0;">Read Our Story</a>
-        <a href="#support" class="btn btn-secondary" style="font-size: 15px; padding: var(--space-3) var(--space-6); min-width: 0;">Support the Next Chapter</a>
-      </div>
-    </div>
-    <div class="hero-media" style="flex: 1; min-width: 320px; display: flex; gap: var(--space-4); align-items: stretch; height: 470px;">
-      <div class="image-slot washed" style="flex: 1.3; min-width: 0; height: 100%; box-shadow: var(--shadow-md); border-radius: 28px;"><img src="assets/building-exterior.webp" alt="The Common Ground building on Brooklyn Road, Cheltenham" loading="lazy" decoding="async"></div>
-      <div class="hero-media-col" style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: var(--space-4);">
-        <div class="image-slot washed" style="flex: 1; box-shadow: var(--shadow-md); border-radius: 28px;"><img src="assets/community-cafe.webp" alt="Coffee being served in the Common Ground community cafe" loading="lazy" decoding="async"></div>
-        <div class="image-slot washed" style="flex: 1; box-shadow: var(--shadow-md); border-radius: 28px;"><img src="assets/volunteers.webp" alt="Volunteers at work restoring the building" loading="lazy" decoding="async"></div>
-      </div>
-    </div>
-  </section>
+<main id="main">
 
-  <!-- So we got to work -->
-  <section id="story" style="padding: 100px 48px; background: var(--color-surface);">
-    <div style="max-width: 1280px; margin: 0 auto; display: flex; gap: 72px; align-items: center; flex-wrap: wrap;">
-      <div class="image-slot washed" style="flex: 1; min-width: 280px; height: 420px; box-shadow: var(--shadow-md); border-radius: 28px;"><img src="assets/restoration.webp" alt="Restoration work in progress inside Common Ground" loading="lazy" decoding="async"></div>
-      <div style="flex: 1.1; min-width: 320px;">
-        <h2 style="font-size: 34px; margin: 0 0 var(--space-4);">When we took it on, there was a lot to do.</h2>
-        <p style="font-size: 17px; line-height: 1.7; margin: 0 0 var(--space-4);">Old floors. Tired rooms. Leaks. Mystery wires. Approximately 847 layers of previous decorating decisions. And somewhere underneath all of it — enormous potential.</p>
-        <p style="font-size: 17px; line-height: 1.7; margin: 0 0 var(--space-4);">So we got to work. With thousands of volunteer hours, support from local organisations, funders, businesses, residents and a small team stubborn enough to believe it could be done, the doors opened again.</p>
-        <p style="font-size: 17px; line-height: 1.7; margin: 0 0 var(--space-4);">Phase One has brought the café and several community spaces back into use. But we're nowhere near finished. There are more rooms to restore, more accessibility improvements to make and a dedicated youth space we want to create.</p>
-        <p style="font-family: var(--font-heading); font-size: 22px; line-height: 1.3; color: var(--color-accent-700); margin: var(--space-6) 0 0;">Common Ground isn't a finished project. It's a building coming back to life. And that's part of the magic.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Before. Now. Next. -->
-  <section style="padding: 110px 48px; max-width: 1280px; margin: 0 auto;">
-    <h2 style="font-size: 34px; margin: 0 0 var(--space-8);">Before. Now. Next.</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-6);">
-      <div class="card elev-sm" style="padding: var(--space-8); gap: var(--space-4); background: var(--color-bg); border: 1px solid var(--color-divider);">
-        <div class="card-kicker" style="font-size: 12px; color: var(--brown);">Before</div>
-        <p style="font-size: 16px; line-height: 1.7; margin: 0;">A much-loved community building that needed serious investment, imagination and care.</p>
-      </div>
-      <div class="card elev-sm" style="padding: var(--space-8); gap: var(--space-4); background: var(--pink-tint);">
-        <div class="card-kicker" style="font-size: 12px; color: var(--pink-deep);">Now</div>
-        <p style="font-size: 16px; line-height: 1.7; margin: 0;">A community café. Rooms full of activity. Art. Coffee. Workshops. Children making things. People meeting people. Thousands of volunteer hours. And life back in the building.</p>
-      </div>
-      <div class="card elev-sm" style="padding: var(--space-8); gap: var(--space-4); background: var(--blue-tint);">
-        <div class="card-kicker" style="font-size: 12px; color: var(--blue);">Next</div>
-        <p style="font-size: 16px; line-height: 1.7; margin: 0;">More of the building brought back into use. A dedicated space for young people. Better accessibility. More art and culture. More community programmes. More opportunities for local people. And plenty we haven't thought of yet.</p>
-        <p style="font-family: var(--font-heading); font-size: 18px; margin: var(--space-2) 0 0; color: var(--blue);">We're only getting started.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Built with community -->
-  <section style="padding: 100px 48px; background: var(--color-accent-800); color: var(--color-accent-100);">
-    <div style="max-width: 1280px; margin: 0 auto; display: flex; gap: 72px; flex-wrap: wrap; align-items: flex-start;">
-      <div style="flex: 1; min-width: 320px;">
-        <h2 style="font-size: 34px; margin: 0 0 var(--space-4); color: var(--color-accent-100);">Built with community.</h2>
-        <p style="font-size: 17px; line-height: 1.7; color: var(--color-accent-100); margin: 0 0 var(--space-4);">Common Ground hasn't been created by one person or one organisation. It's been built through people showing up.</p>
-        <p style="font-size: 17px; line-height: 1.7; color: var(--color-accent-100); margin: 0 0 var(--space-4);">People lending tools, moving furniture, fixing things and occasionally asking whether we have completely lost our minds. Probably. But look what happened.</p>
-        <a href="#support" class="btn btn-primary" style="font-size: 15px; padding: var(--space-3) var(--space-6); background: var(--color-accent-2-400); color: var(--color-accent-2-900);">Get Involved</a>
-      </div>
-      <div style="flex: 1; min-width: 320px; display: flex; flex-wrap: wrap; gap: var(--space-2); align-content: flex-start; padding-top: var(--space-6);">
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: color-mix(in srgb, var(--brown-tint) 22%, transparent); color: var(--color-accent-100);">Volunteers painting walls</span>
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: color-mix(in srgb, var(--brown-tint) 22%, transparent); color: var(--color-accent-100);">Businesses donating materials</span>
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: color-mix(in srgb, var(--brown-tint) 22%, transparent); color: var(--color-accent-100);">Organisations sharing expertise</span>
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: color-mix(in srgb, var(--brown-tint) 22%, transparent); color: var(--color-accent-100);">Artists bringing ideas</span>
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: color-mix(in srgb, var(--brown-tint) 22%, transparent); color: var(--color-accent-100);">Residents telling us what they need</span>
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: color-mix(in srgb, var(--brown-tint) 22%, transparent); color: var(--color-accent-100);">Customers buying coffee</span>
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: color-mix(in srgb, var(--brown-tint) 22%, transparent); color: var(--color-accent-100);">Funders taking a chance on the vision</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- A place for everyone -->
-  <section id="everyone" style="padding: 110px 48px; max-width: 1280px; margin: 0 auto; display: flex; gap: 72px; align-items: center; flex-wrap: wrap;">
-    <div style="flex: 1.1; min-width: 320px;">
-      <span class="tag" style="background: var(--blue-tint); color: var(--blue-deep);">A place for everyone</span>
-      <h2 style="font-size: 34px; margin: var(--space-3) 0 var(--space-4);">We mean that.</h2>
-      <p style="font-size: 17px; line-height: 1.7; margin: 0 0 var(--space-4);">Common Ground is for people of different ages, cultures, nationalities, abilities, identities, experiences and circumstances. You don't have to fit into a particular box to belong here.</p>
-      <p style="font-size: 17px; line-height: 1.7; margin: 0 0 var(--space-4);">We care about accessibility from the beginning rather than treating it as an afterthought. We care about people being treated with dignity and respect. We care about creating opportunities for people whose voices aren't always heard.</p>
-      <p style="font-size: 17px; line-height: 1.7; margin: 0 0 var(--space-4);">And we believe communities are stronger when different people actually have opportunities to meet each other.</p>
-      <p style="font-family: var(--font-heading); font-size: 20px; line-height: 1.35; color: var(--color-accent-700); margin: 0;">We don't expect everyone who walks through our doors to be the same. That would be incredibly boring.</p>
-    </div>
-    <div class="image-slot washed image-slot--empty" style="flex: 1; min-width: 280px; height: 420px; box-shadow: var(--shadow-md); border-radius: 28px; --slot-label: "people together in the space";"></div>
-  </section>
-
-  <!-- Values -->
-  <section id="values" style="padding: 100px 48px; background: var(--color-surface);">
-    <div style="max-width: 1280px; margin: 0 auto;">
-      <h2 style="font-size: 34px; margin: 0 0 var(--space-3);">People. Purpose. Planet. Accessibility.</h2>
-      <p style="font-size: 17px; margin: 0 0 var(--space-8);">These are not only ideas — it's at the heart of everything we do.</p>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-6);">
-        <div class="card" style="padding: var(--space-8); background: var(--color-bg); border: 1px solid var(--color-divider); gap: var(--space-3);">
-          <div class="card-title" style="font-size: 22px; color: var(--blue);">People</div>
-          <p style="font-size: 15px; line-height: 1.65; margin: 0;">People come first. Always. We create opportunities for connection, belonging and participation.</p>
+  <!-- ── Hero ───────────────────────────────────────────────────────── -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Our Story</span>
+        <h1>An old community centre. A slightly mad idea. A lot of people who believed in it.</h1>
+        <p class="lede">This building has been part of Cheltenham since around 1947. For generations, people came through these doors to meet, celebrate, play, dance and spend time together.</p>
+        <p class="lede quiet">Then the building fell quiet.</p>
+        <div class="btn-row">
+          <a href="#story" class="btn btn-primary">Read Our Story</a>
+          <a href="#support" class="btn btn-secondary">Support the Next Chapter</a>
         </div>
-        <div class="card" style="padding: var(--space-8); background: var(--color-bg); border: 1px solid var(--color-divider); gap: var(--space-3);">
-          <div class="card-title" style="font-size: 22px; color: var(--blue);">Purpose</div>
-          <p style="font-size: 15px; line-height: 1.65; margin: 0;">Common Ground exists for more than generating income. Every coffee, room booking and event helps us create social value and invest back into our community.</p>
+      </div>
+
+      <div class="collage">
+        <div class="frame"><img src="assets/building-exterior.webp" alt="Inside the Common Ground community cafe, with artwork on the walls" width="1200" height="900" fetchpriority="high" decoding="async"></div>
+        <div class="frame"><img src="assets/community-cafe.webp" alt="A corner of the cafe with plants, books and armchairs" width="900" height="700" loading="lazy" decoding="async"></div>
+        <div class="frame"><img src="assets/volunteers.webp" alt="Sofas and tables in the restored community space" width="900" height="700" loading="lazy" decoding="async"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Facts strip ────────────────────────────────────────────────── -->
+  <div class="facts">
+    <div class="wrap">
+      <div class="fact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <div><b>Community Café</b><span>Friday 9am–4pm · Saturday 9am–4pm · Sunday 10am–2pm</span></div>
+      </div>
+      <div class="fact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+        <div><b>Brooklyn Road</b><span>Cheltenham, GL51 8DS</span></div>
+      </div>
+      <div class="fact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="3.2"/><path d="M22 20v-2a4 4 0 0 0-3-3.87M17 3.6a4 4 0 0 1 0 7.75"/></svg>
+        <div><b>Getting here</b><span>Parking available. Bike rack available. Bus A stops nearby. Dogs welcome.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Our story ──────────────────────────────────────────────────── -->
+  <section class="band-surface" id="story">
+    <div class="wrap">
+      <div class="split reveal">
+        <div class="split-media">
+          <img src="assets/restoration.webp" alt="Pen-and-ink drawing of the Common Ground building" width="900" height="760" loading="lazy" decoding="async">
         </div>
-        <div class="card" style="padding: var(--space-8); background: var(--color-bg); border: 1px solid var(--color-divider); gap: var(--space-3);">
-          <div class="card-title" style="font-size: 22px; color: var(--blue);">Planet</div>
-          <p style="font-size: 15px; line-height: 1.65; margin: 0;">We're bringing an existing building back into use, working towards reducing waste and energy use and choosing local, responsible suppliers wherever possible.</p>
-        </div>
-        <div class="card" style="padding: var(--space-8); background: var(--color-bg); border: 1px solid var(--color-divider); gap: var(--space-3);">
-          <div class="card-title" style="font-size: 22px; color: var(--blue);">Accessibility</div>
-          <p style="font-size: 15px; line-height: 1.65; margin: 0;">A community space isn't truly a community space if people can't use it. We're working to make Common Ground physically, socially and culturally accessible — including considering disability, neurodiversity and different ways people experience spaces.</p>
+        <div class="split-body">
+          <h2>When we took it on, there was a lot to do.</h2>
+          <p style="margin-top:20px">Old floors. Tired rooms. Leaks. Mystery wires. Approximately 847 layers of previous decorating decisions. And somewhere underneath all of it — enormous potential.</p>
+          <p>So we got to work. With thousands of volunteer hours, support from local organisations, funders, businesses, residents and a small team stubborn enough to believe it could be done, the doors opened again.</p>
+          <p>Phase One has brought the café and several community spaces back into use. But we're nowhere near finished. There are more rooms to restore, more accessibility improvements to make and a dedicated youth space we want to create.</p>
+          <p class="pull">Common Ground isn't a finished project. It's a building coming back to life. And that's part of the magic.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Mission Inclusion -->
-  <section style="padding: 110px 48px; max-width: 900px; margin: 0 auto;">
-    <span class="tag" style="background: var(--brown-tint); color: var(--brown);">Powered by Mission Inclusion CIC</span>
-    <h2 style="font-size: 34px; margin: var(--space-3) 0 var(--space-4);">We bring people together.</h2>
-    <p style="font-size: 17px; line-height: 1.7; margin: 0 0 var(--space-4);">Common Ground Cheltenham is run by Mission Inclusion CIC, a not-for-profit Community Interest Company. We create spaces, programmes and opportunities that help people connect across backgrounds, generations and cultures.</p>
-    <p style="font-size: 17px; line-height: 1.7; margin: 0 0 var(--space-4);">Common Ground is that mission made physical. A place where inclusion isn't a poster on the wall. It's who gets invited in. Who gets heard. Who gets opportunities. Who can participate.</p>
-    <p style="font-family: var(--font-heading); font-size: 24px; line-height: 1.3; color: var(--color-accent-700); margin: var(--space-6) 0;">“There is a place for me here.”</p>
-    <p style="font-size: 17px; line-height: 1.7; margin: 0 0 var(--space-6);">Income generated through Common Ground is reinvested into our community work, programmes and the continued restoration of the building.</p>
-    <a href="#support" class="btn btn-secondary" style="font-size: 15px; padding: var(--space-3) var(--space-6); min-width: 0;">Discover Mission Inclusion</a>
-  </section>
-
-  <!-- Support -->
-  <section id="support" style="padding: 100px 48px; background: var(--color-surface);">
-    <div style="max-width: 1280px; margin: 0 auto;">
-      <div style="max-width: 680px; margin: 0 0 var(--space-8);">
-        <h2 style="font-size: 34px; margin: 0 0 var(--space-4);">Help us bring the next bit back to life.</h2>
-        <p style="font-size: 17px; line-height: 1.7; margin: 0 0 var(--space-3);">We've achieved a huge amount. But there is still a lot of building waiting behind closed doors. Future phases include restoring additional areas, improving accessibility and creating a dedicated space for young people.</p>
-        <p style="font-size: 17px; line-height: 1.7; margin: 0;">There are lots of ways to help.</p>
-      </div>
-      <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-8);">
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: var(--color-bg); color: var(--brown-deep); border: 1px solid var(--color-divider);">Donate</span>
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: var(--color-bg); color: var(--brown-deep); border: 1px solid var(--color-divider);">Volunteer</span>
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: var(--color-bg); color: var(--brown-deep); border: 1px solid var(--color-divider);">Fund a project</span>
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: var(--color-bg); color: var(--brown-deep); border: 1px solid var(--color-divider);">Sponsor a room</span>
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: var(--color-bg); color: var(--brown-deep); border: 1px solid var(--color-divider);">Donate materials or expertise</span>
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: var(--color-bg); color: var(--brown-deep); border: 1px solid var(--color-divider);">Become a community partner</span>
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: var(--color-bg); color: var(--brown-deep); border: 1px solid var(--color-divider);">Hold your event here</span>
-        <span class="tag" style="font-size: 14px; padding: 8px 18px; background: var(--color-bg); color: var(--brown-deep); border: 1px solid var(--color-divider);">Buy a coffee</span>
-      </div>
-      <p style="font-size: 17px; margin: 0 0 var(--space-6);">Every one of those things moves Common Ground forward.</p>
-      <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
-        <a href="#visit" class="btn btn-primary" style="font-size: 15px; padding: var(--space-3) var(--space-6); min-width: 0;">Donate</a>
-        <a href="#visit" class="btn btn-secondary" style="font-size: 15px; padding: var(--space-3) var(--space-6); min-width: 0;">Partner With Us</a>
-        <a href="#visit" class="btn btn-secondary" style="font-size: 15px; padding: var(--space-3) var(--space-6); min-width: 0;">Volunteer</a>
+  <!-- ── Before. Now. Next. ─────────────────────────────────────────── -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Before. Now. Next.</h2></div>
+      <div class="grid grid-3 reveal">
+        <article class="card">
+          <span class="kicker">Before</span>
+          <p>A much-loved community building that needed serious investment, imagination and care.</p>
+        </article>
+        <article class="card card--now">
+          <span class="kicker">Now</span>
+          <p>A community café. Rooms full of activity. Art. Coffee. Workshops. Children making things. People meeting people. Thousands of volunteer hours. And life back in the building.</p>
+        </article>
+        <article class="card card--next">
+          <span class="kicker">Next</span>
+          <p>More of the building brought back into use. A dedicated space for young people. Better accessibility. More art and culture. More community programmes. More opportunities for local people. And plenty we haven't thought of yet.</p>
+          <p class="pull">We're only getting started.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Have an idea -->
-  <section id="idea" style="padding: 110px 48px; max-width: 1280px; margin: 0 auto; display: flex; gap: 72px; align-items: center; flex-wrap: wrap;">
-    <div class="image-slot washed image-slot--empty" style="flex: 1; min-width: 280px; height: 380px; box-shadow: var(--shadow-md); border-radius: 28px; --slot-label: "workshop / creative activity photo";"></div>
-    <div style="flex: 1.1; min-width: 320px;">
-      <span class="tag" style="background: var(--pink-tint); color: var(--pink-deep);">Have an idea?</span>
-      <h2 style="font-size: 34px; margin: var(--space-3) 0 var(--space-4);">This might be our favourite page.</h2>
-      <p style="font-size: 17px; line-height: 1.7; margin: 0 0 var(--space-4);">Common Ground isn't supposed to be a place where we decide everything and the community simply turns up. If you have an idea for a workshop, event, exhibition, community group, collaboration, activity or something wonderfully strange that you think belongs here — tell us.</p>
-      <p style="font-size: 17px; line-height: 1.7; margin: 0 0 var(--space-3);">You don't need a perfectly written proposal. Start with:</p>
-      <p style="font-family: var(--font-heading); font-size: 24px; color: var(--color-accent-700); margin: 0 0 var(--space-3);">“I've got an idea…”</p>
-      <p style="font-size: 17px; line-height: 1.7; margin: 0 0 var(--space-6);">We'll take it from there.</p>
-      <a href="mailto:hello@commongroundcheltenham.com" class="btn btn-primary" style="font-size: 15px; padding: var(--space-3) var(--space-6); min-width: 0;">Tell Us Your Idea</a>
-    </div>
-  </section>
-
-  <!-- Visit -->
-  <section id="visit" style="padding: 100px 48px; background: var(--color-surface);">
-    <div style="max-width: 1280px; margin: 0 auto; display: flex; gap: 72px; flex-wrap: wrap;">
-      <div style="flex: 1; min-width: 320px;">
-        <span class="tag" style="background: var(--pink-tint); color: var(--pink-deep);">Visit Common Ground</span>
-        <h2 style="font-size: 34px; margin: var(--space-3) 0 var(--space-6);">Come and find your place.</h2>
-        <div style="display: flex; flex-direction: column; gap: var(--space-4); font-size: 16px; line-height: 1.6;">
-          <div><strong>Where</strong><br>Common Ground Cheltenham<br>Brooklyn Road, Cheltenham, GL51 8DS</div>
-          <div><strong>Community Café</strong><br>Friday 9am–4pm · Saturday 9am–4pm · Sunday 10am–2pm</div>
-          <div><strong>Getting here</strong><br>Parking available. Bike rack available. Bus A stops nearby. Dogs welcome.</div>
-          <div><strong>Questions, room hire, partnerships or brilliant ideas</strong><br><a href="mailto:hello@commongroundcheltenham.com">hello@commongroundcheltenham.com</a></div>
+  <!-- ── Built with community ───────────────────────────────────────── -->
+  <section class="band-dark">
+    <div class="wrap">
+      <div class="split reveal" style="align-items:start">
+        <div>
+          <h2>Built with community.</h2>
+          <p style="margin-top:20px">Common Ground hasn't been created by one person or one organisation. It's been built through people showing up.</p>
+          <p>People lending tools, moving furniture, fixing things and occasionally asking whether we have completely lost our minds. Probably. But look what happened.</p>
+          <div class="btn-row" style="margin-top:26px">
+            <a href="#support" class="btn btn-primary">Get Involved</a>
+          </div>
         </div>
-        <p style="font-family: var(--font-heading); font-size: 20px; line-height: 1.35; color: var(--color-accent-700); margin: var(--space-8) 0 0;">Or just come in. Coffee is usually a very good place to start.</p>
+        <ul class="tags">
+          <li>Volunteers painting walls</li>
+          <li>Businesses donating materials</li>
+          <li>Organisations sharing expertise</li>
+          <li>Artists bringing ideas</li>
+          <li>Residents telling us what they need</li>
+          <li>Customers buying coffee</li>
+          <li>Funders taking a chance on the vision</li>
+        </ul>
       </div>
-      <div class="image-slot washed" style="flex: 1; min-width: 280px; min-height: 380px; box-shadow: var(--shadow-md); border-radius: 28px;"><img src="assets/location.webp" alt="Where to find Common Ground Cheltenham" loading="lazy" decoding="async"></div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer style="padding: 80px 48px 40px; background: var(--color-accent-900); color: var(--color-accent-200);">
-    <div style="max-width: 1280px; margin: 0 auto; display: flex; gap: 72px; flex-wrap: wrap;">
-      <div style="flex: 1.4; min-width: 300px;">
-        <div class="nav-brand" style="font-size: 24px; color: var(--color-accent-100); margin-bottom: var(--space-3);">Common Ground Cheltenham</div>
-        <p style="font-size: 16px; margin: 0 0 var(--space-3);">Your neighbourhood space that feels like home.</p>
-        <p style="font-size: 14px; opacity: 0.75; margin: 0;">Powered by Mission Inclusion CIC, a not-for-profit Community Interest Company.</p>
+  <!-- ── A place for everyone ───────────────────────────────────────── -->
+  <section id="everyone">
+    <div class="wrap wrap--narrow centred reveal">
+      <span class="eyebrow">A place for everyone</span>
+      <h2>We mean that.</h2>
+      <p class="lede" style="margin-top:20px">Common Ground is for people of different ages, cultures, nationalities, abilities, identities, experiences and circumstances. You don't have to fit into a particular box to belong here.</p>
+      <p>We care about accessibility from the beginning rather than treating it as an afterthought. We care about people being treated with dignity and respect. We care about creating opportunities for people whose voices aren't always heard.</p>
+      <p>And we believe communities are stronger when different people actually have opportunities to meet each other.</p>
+      <div class="quote-card">
+        <p class="pull">We don't expect everyone who walks through our doors to be the same. That would be incredibly boring.</p>
       </div>
-      <div style="flex: 1; min-width: 200px;">
-        <div style="font-family: var(--font-heading); font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-200); margin-bottom: var(--space-3);">Explore</div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2) var(--space-6); font-size: 15px;">
-          <a href="#everyone" style="color: var(--color-accent-200);">About</a>
-          <a href="#idea" style="color: var(--color-accent-200);">What's On</a>
-          <a href="#visit" style="color: var(--color-accent-200);">Café</a>
-          <a href="#idea" style="color: var(--color-accent-200);">Art + Culture</a>
-          <a href="#visit" style="color: var(--color-accent-200);">Hire a Space</a>
-          <a href="#story" style="color: var(--color-accent-200);">Our Story</a>
-          <a href="#support" style="color: var(--color-accent-200);">Get Involved</a>
-          <a href="#support" style="color: var(--color-accent-200);">Support Us</a>
-          <a href="#visit" style="color: var(--color-accent-200);">Contact</a>
+    </div>
+  </section>
+
+  <!-- ── Values ─────────────────────────────────────────────────────── -->
+  <section class="band-surface" id="values">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>People. Purpose. Planet. Accessibility.</h2>
+        <p style="margin-top:14px">These are not only ideas — it's at the heart of everything we do.</p>
+      </div>
+      <div class="grid grid-4 reveal">
+        <article class="card">
+          <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="3.2"/><path d="M22 20v-2a4 4 0 0 0-3-3.87M17 3.6a4 4 0 0 1 0 7.75"/></svg></span>
+          <h3>People</h3>
+          <p>People come first. Always. We create opportunities for connection, belonging and participation.</p>
+        </article>
+        <article class="card">
+          <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1"/></svg></span>
+          <h3>Purpose</h3>
+          <p>Common Ground exists for more than generating income. Every coffee, room booking and event helps us create social value and invest back into our community.</p>
+        </article>
+        <article class="card">
+          <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c5-3.4 8-7 8-11a8 8 0 0 0-16 0c0 4 3 7.6 8 11z" style="display:none"/><path d="M19 5c0 8-5.4 12.4-11 13"/><path d="M5.5 18C3.5 13 6 6.5 19 5c1 6.5-2.5 12-8.5 12.5a5.6 5.6 0 0 1-5-1.5"/></svg></span>
+          <h3>Planet</h3>
+          <p>We're bringing an existing building back into use, working towards reducing waste and energy use and choosing local, responsible suppliers wherever possible.</p>
+        </article>
+        <article class="card">
+          <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4.2" r="1.9"/><path d="M5 8.4h14"/><path d="M12 8.4v6"/><path d="m8.4 20.5 3.6-6 3.6 6"/></svg></span>
+          <h3>Accessibility</h3>
+          <p>A community space isn't truly a community space if people can't use it. We're working to make Common Ground physically, socially and culturally accessible — including considering disability, neurodiversity and different ways people experience spaces.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Mission Inclusion ──────────────────────────────────────────── -->
+  <section>
+    <div class="wrap wrap--narrow centred reveal">
+      <span class="eyebrow eyebrow--pink">Powered by Mission Inclusion CIC</span>
+      <h2>We bring people together.</h2>
+      <p class="lede" style="margin-top:20px">Common Ground Cheltenham is run by Mission Inclusion CIC, a not-for-profit Community Interest Company. We create spaces, programmes and opportunities that help people connect across backgrounds, generations and cultures.</p>
+      <p>Common Ground is that mission made physical. A place where inclusion isn't a poster on the wall. It's who gets invited in. Who gets heard. Who gets opportunities. Who can participate.</p>
+      <div class="quote-card"><p class="pull">“There is a place for me here.”</p></div>
+      <p style="margin-top:30px">Income generated through Common Ground is reinvested into our community work, programmes and the continued restoration of the building.</p>
+      <div class="btn-row" style="margin-top:24px">
+        <a href="#support" class="btn btn-secondary">Discover Mission Inclusion</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Support ────────────────────────────────────────────────────── -->
+  <section class="band-surface" id="support">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>Help us bring the next bit back to life.</h2>
+        <p style="margin-top:18px">We've achieved a huge amount. But there is still a lot of building waiting behind closed doors. Future phases include restoring additional areas, improving accessibility and creating a dedicated space for young people.</p>
+        <p>There are lots of ways to help.</p>
+      </div>
+      <ul class="tags reveal">
+        <li>Donate</li>
+        <li>Volunteer</li>
+        <li>Fund a project</li>
+        <li>Sponsor a room</li>
+        <li>Donate materials or expertise</li>
+        <li>Become a community partner</li>
+        <li>Hold your event here</li>
+        <li>Buy a coffee</li>
+      </ul>
+      <p class="reveal" style="margin:28px 0 24px">Every one of those things moves Common Ground forward.</p>
+      <div class="btn-row reveal">
+        <a href="mailto:hello@commongroundcheltenham.com?subject=Donating%20to%20Common%20Ground" class="btn btn-primary">Donate</a>
+        <a href="mailto:hello@commongroundcheltenham.com?subject=Partnering%20with%20Common%20Ground" class="btn btn-secondary">Partner With Us</a>
+        <a href="mailto:hello@commongroundcheltenham.com?subject=Volunteering%20at%20Common%20Ground" class="btn btn-secondary">Volunteer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Have an idea ───────────────────────────────────────────────── -->
+  <section id="idea">
+    <div class="wrap wrap--narrow centred reveal">
+      <span class="eyebrow eyebrow--pink">Have an idea?</span>
+      <h2>This might be our favourite page.</h2>
+      <p class="lede" style="margin-top:20px">Common Ground isn't supposed to be a place where we decide everything and the community simply turns up. If you have an idea for a workshop, event, exhibition, community group, collaboration, activity or something wonderfully strange that you think belongs here — tell us.</p>
+      <p>You don't need a perfectly written proposal. Start with:</p>
+      <div class="quote-card"><p class="pull">“I've got an idea…”</p></div>
+      <p style="margin-top:30px">We'll take it from there.</p>
+      <div class="btn-row" style="margin-top:24px">
+        <a href="mailto:hello@commongroundcheltenham.com?subject=I've%20got%20an%20idea" class="btn btn-primary">Tell Us Your Idea</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Visit ──────────────────────────────────────────────────────── -->
+  <section class="band-surface" id="visit">
+    <div class="wrap">
+      <div class="visit reveal">
+        <div>
+          <span class="eyebrow">Visit Common Ground</span>
+          <h2>Come and find your place.</h2>
+
+          <dl class="info-grid">
+            <div class="info">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+              <div>
+                <dt>Where</dt>
+                <dd>Common Ground Cheltenham<br>Brooklyn Road, Cheltenham, GL51 8DS<br>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=Common+Ground+Cheltenham%2C+Brooklyn+Road%2C+Cheltenham+GL51+8DS" target="_blank" rel="noopener">Get directions</a>
+                </dd>
+              </div>
+            </div>
+            <div class="info">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <div>
+                <dt>Community Café</dt>
+                <dd>Friday 9am–4pm · Saturday 9am–4pm · Sunday 10am–2pm</dd>
+              </div>
+            </div>
+            <div class="info">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14"/><circle cx="7.5" cy="17" r="2.4"/><circle cx="16.5" cy="17" r="2.4"/><path d="M7.5 17 10 8h5l2 6"/></svg>
+              <div>
+                <dt>Getting here</dt>
+                <dd>Parking available. Bike rack available. Bus A stops nearby. Dogs welcome.</dd>
+              </div>
+            </div>
+            <div class="info">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3.6 6.7 8.4 6 8.4-6"/></svg>
+              <div>
+                <dt>Questions, room hire, partnerships or brilliant ideas</dt>
+                <dd><a href="mailto:hello@commongroundcheltenham.com">hello@commongroundcheltenham.com</a></dd>
+              </div>
+            </div>
+          </dl>
+
+          <p class="pull">Or just come in. Coffee is usually a very good place to start.</p>
         </div>
-      </div>
-      <div style="flex: 0.8; min-width: 180px;">
-        <div style="font-family: var(--font-heading); font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-200); margin-bottom: var(--space-3);">Follow the story</div>
-        <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-          <a href="https://www.instagram.com/commongroundcheltenham/" target="_blank" rel="noopener" style="color: var(--color-accent-200); display: flex; align-items: center; gap: 10px; font-size: 15px;">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg>
-            Instagram
-          </a>
-          <a href="https://www.facebook.com/commongroundcheltenham/" target="_blank" rel="noopener" style="color: var(--color-accent-200); display: flex; align-items: center; gap: 10px; font-size: 15px;">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"></path></svg>
-            Facebook
-          </a>
+
+        <div class="visit-media">
+          <img src="assets/location.webp" alt="The hand-painted Common Ground Café sign, and freshly baked pastries" width="900" height="1200" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
-    <div style="max-width: 1280px; margin: var(--space-8) auto 0; padding-top: var(--space-6); border-top: 1px solid color-mix(in srgb, var(--blue-tint) 30%, transparent); font-family: var(--font-heading); font-size: 18px; color: var(--pink);">Come for the coffee. Stay for the people. Leave feeling like you belong.</div>
-  </footer>
+  </section>
 
-</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Common Ground Cheltenham</div>
+        <p>Your neighbourhood space that feels like home.</p>
+        <p class="footer-note">Powered by Mission Inclusion CIC, a not-for-profit Community Interest Company.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#everyone">About</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#visit">Café</a></li>
+          <li><a href="#idea">What's On</a></li>
+          <li><a href="#idea">Art + Culture</a></li>
+          <li><a href="#visit">Hire a Space</a></li>
+          <li><a href="#support">Get Involved</a></li>
+          <li><a href="#support">Support Us</a></li>
+          <li><a href="#visit">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Follow the story</h4>
+        <ul class="social">
+          <li><a href="https://www.instagram.com/commongroundcheltenham/" target="_blank" rel="noopener">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram</a></li>
+          <li><a href="https://www.facebook.com/commongroundcheltenham/" target="_blank" rel="noopener">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+            Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">Come for the coffee. Stay for the people. Leave feeling like you belong.</div>
+  </div>
+</footer>
+
+<script>
+document.body.classList.remove('no-js');
+
+/* Mobile menu ------------------------------------------------------------ */
+(function () {
+  var btn = document.getElementById('menuBtn');
+  var panel = document.getElementById('navPanel');
+  if (!btn || !panel) return;
+
+  function setOpen(open) {
+    document.body.classList.toggle('menu-open', open);
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  btn.addEventListener('click', function () {
+    setOpen(!document.body.classList.contains('menu-open'));
+  });
+  panel.addEventListener('click', function (e) {
+    if (e.target.closest('a')) setOpen(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') setOpen(false);
+  });
+  // If the viewport grows past the mobile breakpoint, drop the locked state.
+  matchMedia('(min-width: 901px)').addEventListener('change', function (e) {
+    if (e.matches) setOpen(false);
+  });
+})();
+
+/* Header shadow once scrolled ------------------------------------------- */
+(function () {
+  var header = document.getElementById('siteHeader');
+  if (!header) return;
+  var onScroll = function () { header.classList.toggle('is-stuck', window.scrollY > 8); };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
+/* Reveal on scroll ------------------------------------------------------- */
+(function () {
+  var items = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) ||
+      matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    items.forEach(function (el) { el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  items.forEach(function (el) { io.observe(el); });
+})();
+
+/* Highlight the section you're currently reading -------------------------- */
+(function () {
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav-links a'));
+  var map = {};
+  var sections = [];
+  links.forEach(function (a) {
+    var el = document.querySelector(a.getAttribute('href'));
+    if (el) { map[el.id] = a; sections.push(el); }
+  });
+  if (!sections.length || !('IntersectionObserver' in window)) return;
+
+  var visible = [];
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      var i = visible.indexOf(entry.target);
+      if (entry.isIntersecting) { if (i < 0) visible.push(entry.target); }
+      else if (i >= 0) { visible.splice(i, 1); }
+    });
+    // Only the topmost section still in the band counts as "current".
+    var current = visible.slice().sort(function (a, b) {
+      return a.getBoundingClientRect().top - b.getBoundingClientRect().top;
+    })[0];
+    links.forEach(function (a) { a.removeAttribute('aria-current'); });
+    if (current && map[current.id]) map[current.id].setAttribute('aria-current', 'true');
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  sections.forEach(function (s) { io.observe(s); });
+})();
+</script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -665,7 +892,7 @@ textarea.input { min-height: 90px; resize: vertical; }
   "name": "Common Ground Cheltenham",
   "url": "https://commongroundcheltenham.com/",
   "email": "hello@commongroundcheltenham.com",
-  "description": "Common Ground Cheltenham is a community centre and cafe on Brooklyn Road, Cheltenham, run by Mission Inclusion CIC. Coffee, room hire, workshops, art and a place for everyone.",
+  "description": "Common Ground Cheltenham is a community centre and cafe on Brooklyn Road, Cheltenham, run by Mission Inclusion CIC.",
   "image": "https://commongroundcheltenham.com/assets/building-exterior.webp",
   "address": {
     "@type": "PostalAddress",

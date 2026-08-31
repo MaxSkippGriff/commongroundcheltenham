@@ -14,12 +14,15 @@ Everything it needs is in this repository.
 | `favicon.svg`   | The little icon in the browser tab                           |
 | `robots.txt`    | Tells search engines they may index the site                 |
 | `sitemap.xml`   | Lists the site's pages for search engines                    |
-| `_headers`      | Cloudflare Pages: security headers + asset caching           |
+| `CNAME`         | Tells GitHub Pages which domain serves this site             |
 
 ## Hosting
 
-Hosted free on Cloudflare Pages, deployed automatically from this repository.
+Hosted free on GitHub Pages, deployed automatically from this repository.
 Push a change to the `main` branch and the live site updates within a minute.
+
+DNS stays with IONOS: four A records and a `www` CNAME point at GitHub. All
+mail records (MX, SPF, DKIM, DMARC) are untouched by the website hosting.
 
 Domain `commongroundcheltenham.com` is registered with IONOS.
 
